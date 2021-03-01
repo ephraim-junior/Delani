@@ -1,9 +1,9 @@
-RAT RUN BUBBLES 
+RAT RUN Blaster 
 A web application game where a user pops bubbles that appear randomly on the page within a limited time span.
 Created by ephraim kamau
 Description
 
-Rat run bubbles is a game where when a user clicks the play button bubbles are generated randomly across the page. They then have to pop as many bubbles as they can within a limited time span. This is accomplished when the user clicks the bubbles. After the set time is over their score is displayed.
+Rat run blaster is a game where when a user clicks the play button bubbles are generated randomly across the page. They then have to pop as many bubbles as they can within a limited time span. This is accomplished when the user clicks the bubbles. After the set time is over their score is displayed.
 Specifications
 Behaviour 	Input 	Output
 Press play to open game console 	Press play 	Navigate to play console page
@@ -12,9 +12,9 @@ Countdown 	Starts after pressing start 	A timer that displays the amount of time
 Display results 	Timer running out / Game over 	Score : 30
 Refresh the game 	Press the resfresh link 	Gaming area is reloaded
 Demo
-This is the landing page for Rat Run Bubble 
+This is the landing page for Rat Run Blaster 
 
-Rat Run Bubble 
+Rat Run Blaster 
 This is the about overlay
 
 About overlay
@@ -31,7 +31,7 @@ Setup/Installation
 
     Click Rat Run Blaster
     or
-    Copy https://ephraim-junior.github.io/Rat-Run-Bubble-Game to your browser and load it.
+    Copy https://ephraim-junior.github.io/Rat-Run-Blaster-Game to your browser and load it.
 
 Known Bugs
 

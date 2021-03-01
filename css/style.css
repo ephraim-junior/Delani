@@ -1,99 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=MuseoModerno:wght@400&display=swap');
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'MuseoModerno', cursive;
+}
+html, body {
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.header-bg {
+    background-image: url("../assets/backgrounds/h_img.jpg");
+    background-color: #cccccc;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.service-bg {
+    background-image: url("../assets/backgrounds/s_image.jpg");
+    background-color: #cccccc;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.contact-bg {
+    background-image: url("../assets/backgrounds/c_image.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#portfolio img {
+    width: 100%;
+    height: auto;
+}
+#portfolio .image {
+    float: left;
+}
 
-<script> 
+#portfolio .text {
+#portfolio .text{
+    z-index: 2;
+    float: left;
+    text-align: center;
+@@ -63,4 +63,58 @@ html, body {
 
-    function GEEKFORGEEKS() { 
+.row{
+     overflow: hidden;
+ }
+}
 
-        var name = document.forms["RegForm"]["Name"]; 
+.flip {
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-origin: 50% 50% 0px;
+    -moz-transform-origin: 50% 50% 0px;
+    -ms-transform-origin: 50% 50% 0px;
+    -o-transform-origin: 50% 50% 0px;
+    -webkit-transform-origin: 50% 50% 0px;
+}
 
-        var email = document.forms["RegForm"]["EMail"]; 
+#what-we-do .back,
+#what-we-do .front {
+    position: absolute;
+    transition: all 3s;
+    -moz-transition: all 3s;
+    -o-transition: all 3s;
+    -webkit-transition: all 3s;
+}
 
-        var phone = document.forms["RegForm"]["Telephone"]; 
+#what-we-do .back {
+    text-align: center;
+    transform: rotateY(0deg);
+    -moz-transform: rotateY( 0deg );
+    -ms-transform: rotateY( 0deg );
+    -o-transform: rotateY( 0deg );
+    -webkit-transform: rotateY( 0deg );
+}
 
-        var what = document.forms["RegForm"]["Subject"]; 
+#what-we-do .front {
+    text-align: center;
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    -webkit-transform: rotateY( 180deg );
+}
 
-        var password = document.forms["RegForm"]["Password"]; 
+/*.flip-front {*/
+/*    transform: rotateY(0deg) !important;*/
+/*    -moz-transform: rotateY( 0deg ) !important;*/
+/*    -ms-transform: rotateY( 0deg ) !important;*/
+/*    -o-transform: rotateY( 0deg ) !important;*/
+/*    -webkit-transform: rotateY( 0deg ) !important;*/
+/*}*/
 
-        var address = document.forms["RegForm"]["Address"]; 
-
-  
-
-        if (name.value == "") { 
-
-            window.alert("Please enter your name."); 
-
-            name.focus(); 
-
-            return false; 
-
-        } 
-
-  
-
-        if (address.value == "") { 
-
-            window.alert("Please enter your address."); 
-
-            address.focus(); 
-
-            return false; 
-
-        } 
-
-  
-
-        if (email.value == "") { 
-
-            window.alert( 
-
-              "Please enter a valid e-mail address."); 
-
-            email.focus(); 
-
-            return false; 
-
-        } 
-
-  
-
-        if (phone.value == "") { 
-
-            window.alert( 
-
-              "Please enter your telephone number."); 
-
-            phone.focus(); 
-
-            return false; 
-
-        } 
-
-  
-
-        if (password.value == "") { 
-
-            window.alert("Please enter your password"); 
-
-            password.focus(); 
-
-            return false; 
-
-        } 
-
-  
-
-        if (what.selectedIndex < 1) { 
-
-            alert("Please enter your course."); 
-
-            what.focus(); 
-
-            return false; 
-
-        } 
-
-  
-
-        return true; 
-
-    } 
-</script> 
+/*.flip-back {*/
+/*    transform: rotateY(180deg) !important;*/
+/*    -moz-transform: rotateY( 180deg ) !important;*/
+/*    -ms-transform: rotateY( 180deg ) !important;*/
+/*    -o-transform: rotateY( 180deg ) !important;*/
+/*    -webkit-transform: rotateY( 180deg ) !important;*/
+/*}*/

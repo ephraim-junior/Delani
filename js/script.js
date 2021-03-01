@@ -1,34 +1,34 @@
-<script>  
-    function validate(){  
-var name=document.f1.name.value;  
-var password=document.f1.password.value;  
-var status=false;  
-  
-if(name.length<1){  
-document.getElementById("nameloc").innerHTML=  
-" <img src='unchecked.gif'/> Please enter your name";  
-status=false;  
-}else{  
-document.getElementById("nameloc").innerHTML=" <img src='checked.gif'/>";  
-status=true;  
-}  
-if(password.length<6){  
-document.getElementById("passwordloc").innerHTML=  
-" <img src='unchecked.gif'/> Password must be at least 6 char long";  
-status=false;  
-}else{  
-document.getElementById("passwordloc").innerHTML=" <img src='checked.gif'/>";  
-}  
-return status;  
-}  
-</script>  
-  
-<form name="f1" action="#" onsubmit="return validate()">  
-<table>  
-<tr><td>Enter Name:</td><td><input type="text" name="name"/>  
-<span id="nameloc"></span></td></tr>  
-<tr><td>Enter Password:</td><td><input type="password" name="password"/>  
-<span id="passwordloc"></span></td></tr>  
-<tr><td colspan="2"><input type="submit" value="register"/></td></tr>  
-</table>  
-</form>  
+(document).ready(function(){
+    //What We Do
+    $(".icon").each(function () {
+        console.log("In Icon");
+        $(this).find("div.image").click(function () {
+            console.log("Clicked Image DIV");
+            $(this).find("div.front").addClass("flip");
+            $(this).find("div.back").removeClass("flip");
+            console.log("Text now visible")
+            $(this).find("div.back").addClass("back");
+        });
+        $(this).find("div.back").click(function () {
+            console.log("Clicked Text DIV");
+            //$(this).find("div.back").addClass("text-hide");
+            $(this).find("div.back").addClass("flip");
+            $(this).find("div.front").addClass("flip-back");
+        });
+    });
+
+
+    //Portfolio Flip
+    //Portfolio Text Animate
+    $(".item").each(function () {
+        $(this).hover(function(){
+            $(this).find("div.image").animate({
+                height: 'toggle'
+            });
+            $(this).find("div.text").removeClass("text-hide");
+        });
+        $(this).mouseleave(function () {
+            $(this).find("div.text").addClass("text-hide");
+        });
+    });
+});
