@@ -1,52 +1,45 @@
-RAT RUN BUBBLES 
-A web application game where a user pops bubbles that appear randomly on the page within a limited time span.
-Created by ephraim kamau
-Description
+# Delani Studio
 
-Rat run bubbles is a game where when a user clicks the play button bubbles are generated randomly across the page. They then have to pop as many bubbles as they can within a limited time span. This is accomplished when the user clicks the bubbles. After the set time is over their score is displayed.
-Specifications
-Behaviour 	Input 	Output
-Press play to open game console 	Press play 	Navigate to play console page
-Start the game 	Press start 	Bubbles appear on the page
-Countdown 	Starts after pressing start 	A timer that displays the amount of time left until game over
-Display results 	Timer running out / Game over 	Score : 30
-Refresh the game 	Press the resfresh link 	Gaming area is reloaded
-Demo
-This is the landing page for Rat Run Bubble 
+[Check it out](https://ephraim-junior.github.io/Delani-Studio/)
+## Description.
+Delani Studio is a site built to practice concepts learnt including JQuery, bootstrap, javascript and working with APIS's.
 
-Rat Run Bubble 
-This is the about overlay
+## Author
+>ephraim kamau
 
-About overlay
-This is the play console page
+## Screenshot.
+<img src="https://github.com/ephraim-junior/Delani-Studio/blob/master/images/screenshot/shot.png?raw=true" width="1000">
 
-Play Console
-This is the game running
+## Setup.
+To get a local copy of the site:
 
-Game Running
-This is the score modal
+`git clone https://github.com/ephraim-junior/Delani-Studio.git`
 
-Score Modal
-Setup/Installation
+`Extract` the cloned file.
 
-    Click Rat Run Blaster
-    or
-    Copy https://ephraim-junior.github.io/Rat-Run-Bubble-Game to your browser and load it.
+`cd` to Delani-Studio folder.
 
-Known Bugs
+*Launch* `index.html` file.
 
-    Not compatible with mobile devices
-    Some bubbles appear as incomplete
-    Score counter is not 100% accurate
+## Technologies used.
+* HTML5
+* CSS3
+* Bootstrap
+* Javascript
+* JQuery
 
-Technologies Used
+## BDD
+| Inputs |  Description |
+| :---         |          ---: |
+| Name   | The users name. `eg ephraim kamau`|
+| Email     | The users email. ``eg ephraimkamau54@gmail.com``   |
+| Message    | The message from the user.   |
 
-    HTML
-    CSS
-    BOOTSTRAP
-    JAVASCRIPT
-    JQUERY
+## Bugs.
+The MailChimp API doesn't work properly.
 
-Licence
+## License
+>MIT LICENSE &copy; 2021 Ephraim
 
-MIT ©2021 Ephraim Kamau
+## Collaborate
+To contribute to Delani studio, reach me on [Email](waichigovick@gmail.com).
