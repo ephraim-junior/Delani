@@ -18,11 +18,11 @@ To get a local copy of the site:
 
 
 `cd` to Delani-Studio folder.
-=======
+
     Click Babble Blaster
     or
     Copy https://ephraim-junior.github.io/Babble-Blaster-Game to your browser and load it.
->>>>>>> bd5602ae82cae54899e7bbc9cf76d35b904bbc4c
+    bd5602ae82cae54899e7bbc9cf76d35b904bbc4c
 
 *Launch* `index.html` file.
 
